@@ -387,7 +387,22 @@ ul.special-list {
 .about .content p:last-child {
   margin-bottom: 0;
 }
+ .responsive-list {
+    padding-left: 20px; /* Add some left padding to the list items */
+  }
 
+  /* Style the list items with bullets */
+  .responsive-list li {
+    list-style-type: disc; /* Use bullets for list items */
+    margin-bottom: 10px; /* Add spacing between list items */
+  }
+
+  /* Center the text on smaller screens */
+  @media (max-width: 768px) {
+    .text-center {
+      text-align: center;
+    }
+  }
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
