@@ -416,6 +416,23 @@ ul.special-list {
   position: relative;
   overflow: hidden;
   border-radius: 15px; /* Add rounded corners to the image container */
+  box-shadow: 0 8px;
+  padding-left: 30px; /* Adjust the left padding for the list items */
+  padding-left: 20px; /* Add some left padding to the list items */
+
+}
+
+/* Style the list items with bullets */
+.responsive-list li {
+  list-style-type: disc; /* Use bullets for list items */
+  margin-bottom: 10px; /* Add spacing between list items */
+}
+
+
+.image-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px; /* Add rounded corners to the image container */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
   border: 3px solid #3853A1; /* Add a white border around the image */
 }
@@ -439,7 +456,6 @@ ul.special-list {
     text-align: center;
   }
 }
-
 
 /*--------------------------------------------------------------
 # Facts
