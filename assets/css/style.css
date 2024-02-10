@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -407,7 +407,7 @@ ul.special-list {
 
 /* Style the list items with bullets */
 .responsive-list li {
-  list-style-type: disc; /* Use bullets for list items */
+  list-style-type: disc !important; /* Use bullets for list items */
   margin-bottom: 10px; /* Add spacing between list items */
 }
 
@@ -422,11 +422,6 @@ ul.special-list {
 
 }
 
-/* Style the list items with bullets */
-.responsive-list li {
-  list-style-type: disc; /* Use bullets for list items */
-  margin-bottom: 10px; /* Add spacing between list items */
-}
 
 
 .image-card {
