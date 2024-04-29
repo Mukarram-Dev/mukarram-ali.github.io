@@ -421,6 +421,43 @@ section .row span {
     font-size: 2rem;
   }
 }
+
+#skills {
+  background-image: linear-gradient(135deg, #3853a1 0%, #5b86e5 100%);
+  -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  padding: 15rem 0 10rem 0;
+  margin-top: -15rem;
+  margin-bottom: -1px;
+  color: #fff;
+}
+
+@media (max-width: 75em) {
+  #skills {
+    padding: 10rem 0;
+    margin-top: 0;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+}
+
+#skills .skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#skills .skills-list li {
+  margin-bottom: 1rem;
+  font-size: 2.4rem;
+}
+
+@media (max-width: 37.5em) {
+  #skills .skills-list li {
+    font-size: 2rem;
+  }
+}
+
 #hero {
   min-height: 100vh;
   height: 100vh;
