@@ -453,28 +453,6 @@ body, html {
   flex-wrap: wrap;
 }
 
-.services-wrapper__service,
-.skills-wrapper__skill {
-  flex: 1 1 calc(33.333% - 2rem);
-  max-width: calc(33.333% - 2rem);
-  text-align: center;
-  margin: 1rem;
-  box-sizing: border-box;
-}
-
-.services-wrapper__service i,
-.skills-wrapper__skill i {
-  display: block;
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.services-wrapper__service h3,
-.skills-wrapper__skill h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
 /* Services Section */
 #services {
   color: #000;
