@@ -424,29 +424,13 @@ section .row span {
   }
 }
 
-/* General Styles */
-body, html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Container Flexbox */
 .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
   display: flex;
   flex-direction: column;
 }
 
-.section-title {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-/* Flexbox Layout */
+/* Row Flexbox */
 .row {
   display: flex;
   justify-content: space-around;
@@ -466,8 +450,22 @@ body, html {
   flex-wrap: wrap;
 }
 
+#services .services-wrapper__service {
+  max-width: 300px;
+  text-align: center;
+  margin: 1rem;
+}
+
 #services .services-wrapper__service i {
+  display: block;
+  font-size: 3rem;
   color: #000;
+  margin-bottom: 1rem;
+}
+
+#services .services-wrapper__service h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* Skills Section */
@@ -476,23 +474,24 @@ body, html {
   background-image: linear-gradient(135deg, #000000 0%, #737373 100%);
   color: #fff;
   padding: 5rem 0;
+  margin-top: 0;
 }
 
 #skills .skills-wrapper {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-  gap: 20px; /* Adjust the gap between items */
+  flex-wrap: wrap;
 }
 
 #skills .skills-wrapper__skill {
-  flex: 0 1 calc(30% - 40px); /* Adjust the width of items */
-  max-width: calc(30% - 40px);
+  flex: 0 1 calc(30% - 40px); /* Adjust width as needed */
+  max-width: calc(30% - 40px); /* Adjust max-width as needed */
   text-align: center;
-  margin-bottom: 20px; /* Adjust vertical margin */
+  margin: 1rem;
 }
 
 #skills .skills-wrapper__skill i {
+  display: block;
   font-size: 3rem;
   color: #fff;
   margin-bottom: 1rem;
@@ -509,8 +508,6 @@ body, html {
     max-width: calc(50% - 40px);
   }
 }
-
-
 
 
 /* Hero Section */
