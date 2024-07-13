@@ -327,6 +327,7 @@ section .row span {
     width: 100%;
   }
 }
+/* About Section */
 #about {
   background-color: #000000;
   background-image: linear-gradient(135deg, #000000 0%, #737373 100%);
@@ -385,6 +386,7 @@ section .row span {
     text-align: center;
   }
 }
+/* Contact Section */
 #contact {
   background-image: linear-gradient(135deg, #000000 0%, #737373 100%);
   -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
@@ -422,41 +424,73 @@ section .row span {
   }
 }
 
+/* Skills Section */
+
 #skills {
+  background-color: #000000;
   background-image: linear-gradient(135deg, #000000 0%, #737373 100%);
-  -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
-  padding: 15rem 0 10rem 0;
-  margin-top: -15rem;
-  margin-bottom: -1px;
   color: #fff;
+  padding: 5rem 0;
 }
 
-@media (max-width: 75em) {
-  #skills {
-    padding: 10rem 0;
-    margin-top: 0;
-    -webkit-clip-path: none;
-    clip-path: none;
-  }
+#skills .skills-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-#skills .skills-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+#skills .skills-wrapper__skill {
+  max-width: 300px;
+  text-align: center;
+  margin: 1rem;
 }
 
-#skills .skills-list li {
+#skills .skills-wrapper__skill i {
+  font-size: 3rem;
+  color: #fff;
   margin-bottom: 1rem;
-  font-size: 2.4rem;
 }
 
-@media (max-width: 37.5em) {
-  #skills .skills-list li {
-    font-size: 2rem;
-  }
+#skills .skills-wrapper__skill h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+} 
+
+
+/* Services Section */
+#services {
+  background-color: #000000;
+  background-image: linear-gradient(135deg, #000000 0%, #737373 100%);
+  color: #fff;
+  padding: 5rem 0;
 }
+
+#services .services-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#services .services-wrapper__service {
+  max-width: 300px;
+  text-align: center;
+  margin: 1rem;
+}
+
+#services .services-wrapper__service i {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+#services .services-wrapper__service h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+
+/* Hero Section */
 
 #hero {
   min-height: 100vh;
@@ -465,7 +499,7 @@ section .row span {
   align-items: center;
   background: #fff;
   font-weight: 400;
-  color: #272341;
+  color: #ffbd59;
   padding: 0rem 5.6rem;
   top: 0;
   left: 0;
@@ -590,6 +624,8 @@ section .row span {
     top: 90%;
   }
 }
+
+/* Project Section */
 #projects {
   background-color: #e5e5e5;
   color: #272341;
