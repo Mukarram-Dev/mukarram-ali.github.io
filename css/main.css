@@ -647,8 +647,8 @@ section .row span {
 
 /* Project Section */
 #projects {
-  background-color: #e5e5e5;
-  color: #272341;
+  
+  color: #000;
   margin-top: -15rem;
   padding-top: 15rem;
 }
