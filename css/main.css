@@ -476,27 +476,23 @@ body, html {
   background-image: linear-gradient(135deg, #000000 0%, #737373 100%);
   color: #fff;
   padding: 5rem 0;
-  margin-top: 0;
-  overflow: hidden; /* Ensure content stays within the skill section */
 }
 
 #skills .skills-wrapper {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  margin: 0 -15px; /* Adjust margin for flex items */
+  justify-content: space-around;
+  gap: 20px; /* Adjust the gap between items */
 }
 
 #skills .skills-wrapper__skill {
-  flex: 0 0 calc(33.33% - 30px); /* Adjust width of items */
-  max-width: calc(33.33% - 30px);
+  flex: 0 1 calc(30% - 40px); /* Adjust the width of items */
+  max-width: calc(30% - 40px);
   text-align: center;
-  margin: 15px; /* Adjust margin */
-  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  margin-bottom: 20px; /* Adjust vertical margin */
 }
 
 #skills .skills-wrapper__skill i {
-  display: block;
   font-size: 3rem;
   color: #fff;
   margin-bottom: 1rem;
@@ -508,12 +504,12 @@ body, html {
 }
 
 @media (max-width: 768px) {
-  /* Adjust for smaller screens */
   #skills .skills-wrapper__skill {
-    flex: 0 0 calc(50% - 30px); /* Two items per row */
-    max-width: calc(50% - 30px);
+    flex: 0 1 calc(50% - 40px); /* Two items per row on smaller screens */
+    max-width: calc(50% - 40px);
   }
 }
+
 
 
 
