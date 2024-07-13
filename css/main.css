@@ -493,7 +493,6 @@ body, html {
 }
 
 /* Skills Section */
-/* Skills Section */
 #skills {
   background-color: #000000;
   background-image: linear-gradient(135deg, #000000 0%, #737373 100%);
@@ -530,6 +529,13 @@ body, html {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 768px) {
+  /* Adjust for smaller screens */
+  #skills .skills-wrapper__skill {
+    flex: 0 0 calc(50% - 30px); /* Two items per row */
+    max-width: calc(50% - 30px);
+  }
+}
 
 
 
