@@ -528,6 +528,15 @@ body, html {
   }
 }
 
+@media (min-width: 1200px) {
+  .services-wrapper__service,
+  .skills-wrapper__skill {
+    flex: 1 1 calc(25% - 2rem);
+    max-width: calc(25% - 2rem);
+  }
+}
+
+
 
 /* Hero Section */
 
