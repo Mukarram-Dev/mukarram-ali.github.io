@@ -425,23 +425,32 @@ section .row span {
 }
 
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 /* Navigation Bar */
 .navbar {
   background-color: #000000;
+  background-image: linear-gradient(135deg, #000000 0%, #737373 100%);
   color: #fff;
   padding: 1rem 0;
+  position: fixed;
+  top: 20%;
+  right: 0;
 }
 
 .nav-menu {
   list-style-type: none;
-  display: flex;
-  justify-content: center;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-item {
-  margin: 0 1rem;
+  margin: 1rem 0;
 }
 
 .nav-item a {
@@ -456,6 +465,39 @@ section .row span {
   background-color: #737373;
 }
 
+/* Section Styles */
+section {
+  padding: 5rem 0;
+}
+
+section h2 {
+  text-align: center;
+}
+
+/* Adjustments for Services and Skills Sections */
+#services, #skills {
+  background-color: #000000;
+  background-image: linear-gradient(135deg, #000000 0%, #737373 100%);
+  color: #fff;
+}
+
+#skills .skills-wrapper__skill, #services .services-wrapper__service {
+  max-width: 300px;
+  text-align: center;
+  margin: 1rem;
+}
+
+#skills .skills-wrapper__skill i, #services .services-wrapper__service i {
+  display: block;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+#skills .skills-wrapper__skill h3, #services .services-wrapper__service h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
 
 /* Container Flexbox */
 .container {
