@@ -424,6 +424,39 @@ section .row span {
   }
 }
 
+
+/* Navigation Bar */
+.navbar {
+  background-color: #000000;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.nav-item a:hover {
+  background-color: #737373;
+}
+
+
 /* Container Flexbox */
 .container {
   display: flex;
@@ -475,7 +508,7 @@ section .row span {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   color: #fff;
-  padding: 5rem 0;
+  padding: 8rem 0;
   margin-top: 0;
 }
 
