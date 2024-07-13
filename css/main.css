@@ -505,32 +505,46 @@ body, html {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin: 0 -1rem; /* Adjust margins to counteract padding on container */
+}
+
+#skills .skills-wrapper__skill {
+  flex: 1 1 calc(25% - 2rem); /* Adjusted to ensure 4 items per row on desktop */
+  max-width: calc(25% - 2rem); /* Adjusted to ensure 4 items per row on desktop */
+  text-align: center;
+  margin: 1rem; /* Adjusted to match the margin of services section */
+  box-sizing: border-box;
 }
 
 #skills .skills-wrapper__skill i {
+  display: block;
+  font-size: 3rem;
   color: #fff;
+  margin-bottom: 1rem;
+}
+
+#skills .skills-wrapper__skill h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* Media Queries */
 @media (max-width: 992px) {
-  .services-wrapper__service,
-  .skills-wrapper__skill {
+  #skills .skills-wrapper__skill {
     flex: 1 1 calc(50% - 2rem);
     max-width: calc(50% - 2rem);
   }
 }
 
 @media (max-width: 768px) {
-  .services-wrapper__service,
-  .skills-wrapper__skill {
+  #skills .skills-wrapper__skill {
     flex: 1 1 100%;
     max-width: 100%;
   }
 }
 
 @media (min-width: 1200px) {
-  .services-wrapper__service,
-  .skills-wrapper__skill {
+  #skills .skills-wrapper__skill {
     flex: 1 1 calc(25% - 2rem);
     max-width: calc(25% - 2rem);
   }
