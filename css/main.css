@@ -424,17 +424,55 @@ section .row span {
   }
 }
 
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Container Flexbox */
 .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
 }
 
-/* Row Flexbox */
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Flexbox Layout */
 .row {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.services-wrapper__service,
+.skills-wrapper__skill {
+  flex: 1 1 calc(33.333% - 2rem);
+  max-width: calc(33.333% - 2rem);
+  text-align: center;
+  margin: 1rem;
+  box-sizing: border-box;
+}
+
+.services-wrapper__service i,
+.skills-wrapper__skill i {
+  display: block;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.services-wrapper__service h3,
+.skills-wrapper__skill h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* Services Section */
@@ -450,22 +488,8 @@ section .row span {
   flex-wrap: wrap;
 }
 
-#services .services-wrapper__service {
-  max-width: 300px;
-  text-align: center;
-  margin: 1rem;
-}
-
 #services .services-wrapper__service i {
-  display: block;
-  font-size: 3rem;
   color: #000;
-  margin-bottom: 1rem;
-}
-
-#services .services-wrapper__service h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
 }
 
 /* Skills Section */
@@ -483,24 +507,26 @@ section .row span {
   flex-wrap: wrap;
 }
 
-#skills .skills-wrapper__skill {
-  max-width: 300px;
-  text-align: center;
-  margin: 1rem;
-}
-
 #skills .skills-wrapper__skill i {
-  display: block;
-  font-size: 3rem;
   color: #fff;
-  margin-bottom: 1rem;
 }
 
-#skills .skills-wrapper__skill h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+/* Media Queries */
+@media (max-width: 992px) {
+  .services-wrapper__service,
+  .skills-wrapper__skill {
+    flex: 1 1 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+  }
 }
 
+@media (max-width: 768px) {
+  .services-wrapper__service,
+  .skills-wrapper__skill {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
 
 
 /* Hero Section */
