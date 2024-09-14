@@ -101,8 +101,8 @@ a:hover {
   }
 }
 .cta-btn--hero {
-  color: #737373;
-  -webkit-text-fill-color: #737373;
+  color: #468eac;
+  -webkit-text-fill-color: #468eac;
   border: 2px solid rgba(0, 0, 0, 0);
   -o-border-image: linear-gradient(135deg, #386caa 0%, #468eac 100%);
   border-image: linear-gradient(135deg, #386caa 0%, #468eac 100%);
